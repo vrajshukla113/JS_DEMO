@@ -15,17 +15,20 @@
         const hcircle=()=>
         {
             let a = parseInt(document.getElementById("txtno1").value) ;
+            let x = 1;
 
             let strans = "";
             for(i=1;i<=a;i++)
             {
-                strans += i + "<br>";
+                strans +=  i+"*"+"<br>";
+                x = x*i;
             }
             document.getElementById("spananswer").innerHTML = strans;
+            document.getElementById("spananswer").innerHTML = x;
             
         }
     </script>
-    <h1>First Loop</h1>
+    <h1 align="center">Factorial Loop</h1>
     
     <div class = "container w-25 p-5">
         <form name="frm2">

@@ -17,15 +17,15 @@
             let a = parseInt(document.getElementById("txtno1").value) ;
 
             let strans = "";
-            for(i=1;i<=a;i++)
+            for(i=1;i<=10;i++)
             {
-                strans += i + "<br>";
+                strans += a +"*"+ i + "=" + a*i + "<br>";
             }
             document.getElementById("spananswer").innerHTML = strans;
             
         }
     </script>
-    <h1>First Loop</h1>
+    <h1 align="center">Table</h1>
     
     <div class = "container w-25 p-5">
         <form name="frm2">

@@ -15,23 +15,35 @@
         const hcircle=()=>
         {
             let a = parseInt(document.getElementById("txtno1").value) ;
+            
 
             let strans = "";
-            for(i=1;i<=a;i++)
+            if(a=="1"){
+                strans="Enter Valid Number";
+            }
+            else{
+            for(i=2;i<a;i++)
             {
-                strans += i + "<br>";
+              if(a % i ==0){
+                  strans="Entered number is not prime";
+                  break;
+              }
+              else{
+                  strans = "Entered number is prime";
+              }
             }
             document.getElementById("spananswer").innerHTML = strans;
+        }
             
         }
     </script>
-    <h1>First Loop</h1>
+    <h1 align="center">Prime Loop</h1>
     
     <div class = "container w-25 p-5">
         <form name="frm2">
             <div class="form-row">
                 <div class="col">
-                 Radius<input type="text" id="txtno1" class="form-control" placeholder="No1"/>
+                 Number<input type="text" id="txtno1" class="form-control" placeholder="No1"/>
                  </div>
                  </div>
                  <br/>
